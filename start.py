@@ -130,23 +130,23 @@ else:
 
 print("Training & validation time :",time()-t0)   
 if(args.kernel=="rbf" or args.kernel=="Polynomial" or args.kernel=="Linear"):
-    csvfile="/content/Xte0_mat100.csv"
+    csvfile="./data/Xte0_mat100.csv"
     X0_mat_test=read_mat(csvfile)
     res0=svm0.predict(X0_mat_test)
-    csvfile="/content/Xte1_mat100.csv"
+    csvfile="./data/Xte1_mat100.csv"
     X1_mat_test=read_mat(csvfile)
     res1=svm1.predict(X1_mat_test)
-    csvfile="/content/Xte2_mat100.csv"
+    csvfile="./data/Xte2_mat100.csv"
     X2_mat_test=read_mat(csvfile)
     res2=svm2.predict(X2_mat_test)
 else:
-    csvfile="/content/Xte0.csv"
+    csvfile="./data/Xte0.csv"
     X0_test=read_dna(csvfile)
     res0=svm0.predict(X0_test)
-    csvfile="/content/Xte1.csv"
+    csvfile="./data/Xte1.csv"
     X1_test=read_dna(csvfile)
     res1=svm1.predict(X1_test)
-    csvfile="/content/Xte2.csv"
+    csvfile="./data/Xte2.csv"
     X2_test=read_dna(csvfile)
     res2=svm2.predict(X2_test)
 
